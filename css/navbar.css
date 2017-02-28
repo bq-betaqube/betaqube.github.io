@@ -1,8 +1,14 @@
 .logo_main{
 	height:100%;
-	width:200px;
+	width:150px;
 
 }
 .navbar-header{
 	height:50px;
+}
+
+.nav-items:hover{
+	color: #fff !important;
+	background-color: #337ab7 !important;
+
 }

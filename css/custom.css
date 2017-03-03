@@ -14,8 +14,9 @@ ul.nav {
 
 .jumbotron {
 	text-align: center;
-	background-image: url('../images/Hero_Image.jpg');
-	color: black;
+	color: white;
+	background-color: #337ab7;
+	margin:30px 50px 0px 50px;
 }
 
 .jumbotron h1 {

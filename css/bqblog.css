@@ -1,4 +1,18 @@
-.jumbotron{
-	background-image: url('../images/betaqube_3Dmock.png');
+.blog_container{
+	height:400px;
+	width:100%;
+	position: relative;
+
+}
+.blog_image{
+	height:100%;
+	width:100%;
+	position: absolute;
+	padding:30px 50px 30px 50px;
 }
 
+.blog-header{
+	text-align: center;
+	color:#0C3D8F;
+	font-family:Georgia;
+}

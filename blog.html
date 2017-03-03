@@ -15,22 +15,20 @@
     <!-- This is google font -->
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-   
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-  
+
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/landingpage.css">
+    <link rel="stylesheet" type="text/css" href="css/bqblog.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -68,15 +66,56 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
   
-      <div class="container-coverpic">
-        <img class="coverpic" src="images/betaqube_logo.png" title="betaqube logo" alt="betaqube">
-      </div>
+    <!--  <div class="container-coverpic3d">
+        <img class="coverpic3d" src="images/betaqube_3Dmock.jpg" title="betaqube logo" alt="betaqube">
+      </div> -->
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+/**var disqus_config = function () {
+this.page.url = "https://" +PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};*/
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://www-betaqube-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+
+
    
 
     <div class="jumbotron">
-      <div class="container">
-        <h1>Wait for it!</h1>
-        <h1>Our goal is to inspire <br>"Young Minds"</h1>
+      <div class="blog-header">
+        <h1>BQ BLOG</h1>
+        <p>Blog all the young minds.</p>
+      </div>
+
+      <div class="container-blog">
+        <div class="col-sm-8 blog-main">
+          <div class="blog-post">
+            <h1>The first post </h1>
+            <p>This is about Betaqube<p>
+
+          </div>
+          <div class="blog-post">...</div>
+          <div class="blog-post">...</div>
+          <div class="blog-post">...</div>
+
+
+        </div>
+
+
       </div>
     </div>
       <hr>
@@ -84,11 +123,13 @@
     </div> <!-- /container -->
 
 
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
     <script src="js/bootstrap.min.js"></script>
+    <script id="dsq-count-scr" src="//www-betaqube-com.disqus.com/count.js" async></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   </body>
 </html>

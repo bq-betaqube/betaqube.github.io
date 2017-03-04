@@ -5,6 +5,7 @@
 }
 .navbar-header{
 	height:50px;
+
 }
 
 .nav-items:hover{
@@ -15,3 +16,7 @@
 .icon-bar{
 	background-color: #337ab7 !important;
 } 
+
+.navbar{
+	background-color: white;
+}

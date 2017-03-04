@@ -12,7 +12,7 @@
 }
 
 .blog-header{
-	text-align: center;
+	text-align: center !important;
 	color:#0C3D8F;
 	font-family:Georgia;
 }

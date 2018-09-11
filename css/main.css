@@ -321,7 +321,7 @@ section {
 **************************/
 #about-us {
   background-image: url(../images/about-bg.jpg);
-  padding: 60px 0;
+  padding: 90px 0;
 }
 
 #about-us h2 {
@@ -494,7 +494,7 @@ section {
 *********Team CSS*********
 **************************/
 #team {
-  padding-top: 0;
+  padding-top: 90px;
 }
 
 .team-members {

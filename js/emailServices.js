@@ -16,9 +16,14 @@ var emailObject = {
 function sendRequest() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState == 4 && this.status == 200 && this.response.status === 'success') {
       document.getElementById('errorMessage').innerText = "";
       document.getElementById('successMessage').innerText = "Email is successfully sent";
+      document.getElementById('email').value = '';
+      document.getElementById('name').value = '';
+      document.getElementById('message').value = '';
+    } else {
+      document.getElementById('errorMessage').innerText = "Network error please try again";
     }
   };
   xhttp.open("POST", "https://email-services-dev.herokuapp.com/emails/standard" , true);

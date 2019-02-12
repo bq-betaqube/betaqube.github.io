@@ -26,9 +26,10 @@ function sendRequest() {
 }
 
 function submitEmailForm() {
-  var email = document.getElementById('email').value();
-  var name = document.getElementById('name').value();
-  var message = document.getElementById('message').value();
+  console.log('Hello Reached here');
+  var email = document.getElementById('email').value;
+  var name = document.getElementById('name').value;
+  var message = document.getElementById('message').value;
 
   if(email === null || email ==='') {
     document.getElementById('errorMessage').innerText = "Please enter an email Id";

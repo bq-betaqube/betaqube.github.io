@@ -23,7 +23,7 @@ function sendRequest() {
   };
   xhttp.open("POST", "https://email-services-dev.herokuapp.com/standard" , true);
   xhttp.setRequestHeader( 'Content-Type', 'application/json' );
-  xhttp.send(emailObject);
+  xhttp.send(JSON.stringify(emailObject));
 }
 
 function submitEmailForm() {

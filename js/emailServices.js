@@ -9,7 +9,7 @@ var emailObject = {
   lastName = '',
   name = '',
   phoneNumber ='',
-  api = 'BETAQUBE';
+  api = 'BETAQUBE'
 };
 
 

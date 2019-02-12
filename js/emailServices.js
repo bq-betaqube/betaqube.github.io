@@ -21,8 +21,9 @@ function sendRequest() {
       document.getElementById('successMessage').innerText = "Email is successfully sent";
     }
   };
-  xhttp.open("POST", "https://email-services-dev.herokuapp.com/standard" , emailObject);
-  xhttp.send();
+  xhttp.open("POST", "https://email-services-dev.herokuapp.com/standard" , true);
+  xhttp.setRequestHeader( 'Content-Type', 'application/json' );
+  xhttp.send(emailObject);
 }
 
 function submitEmailForm() {

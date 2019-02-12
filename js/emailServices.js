@@ -1,15 +1,15 @@
 
 
 var emailObject = {
-  emailFrom = '',
-  emailTo = 'connect@betaqube.com',
-  emailSubject = 'Contact Form Betaqube Web Application',
-  emailMessage = '',
-  firstName =  '',
-  lastName = '',
-  name = '',
-  phoneNumber ='',
-  api = 'BETAQUBE'
+  emailFrom : '',
+  emailTo : 'connect@betaqube.com',
+  emailSubject : 'Contact Form Betaqube Web Application',
+  emailMessage : '',
+  firstName : '',
+  lastName : '',
+  name : '',
+  phoneNumber : '',
+  api : 'BETAQUBE'
 };
 
 

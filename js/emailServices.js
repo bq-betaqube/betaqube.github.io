@@ -41,7 +41,7 @@ function submitEmailForm() {
   } else {
     emailObject.name = name;
     emailObject.fromEmail = email;
-    emailObject.message = message;
+    emailObject.emailMessage = message;
     sendRequest();
   }
 

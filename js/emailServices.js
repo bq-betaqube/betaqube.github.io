@@ -16,7 +16,7 @@ var emailObject = {
 function sendRequest() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200 && this.response.status === 'success') {
+    if (this.readyState == 4 && this.status == 200 && JSON.parse(this.response).status === 'success') {
       document.getElementById('errorMessage').innerText = "";
       document.getElementById('successMessage').innerText = "Email is successfully sent";
       document.getElementById('email').value = '';

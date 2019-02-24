@@ -21,6 +21,7 @@ function sendRequest() {
       document.getElementById('successMessage').innerText = "Email is successfully sent";
       document.getElementById('email').value = '';
       document.getElementById('name').value = '';
+      // document.getElementById('subject').value = '';
       document.getElementById('message').value = '';
     } else {
       document.getElementById('errorMessage').innerText = "Network error please try again";
@@ -35,17 +36,21 @@ function submitEmailForm() {
   console.log('Hello Reached here');
   var email = document.getElementById('email').value;
   var name = document.getElementById('name').value;
+  // var subject = document.getElementById('subject').value;
   var message = document.getElementById('message').value;
 
   if(email === null || email ==='') {
     document.getElementById('errorMessage').innerText = "Please enter an email Id";
   } else if (name === null || name ==='' ) {
     document.getElementById('errorMessage').innerText = "Please enter your name";
+  // } else if (subject === null || subject ==='' ) {
+  //   document.getElementById('errorSubject').innerText = "Please enter your subject";
   } else if(message === null || message ==='') {
     document.getElementById('errorMessage').innerText = "Please enter your Message";
   } else {
     emailObject.name = name;
     emailObject.fromEmail = email;
+    // emailObject.emailSubject = subject;
     emailObject.emailMessage = message;
     sendRequest();
   }
